@@ -10,7 +10,7 @@ public class Munkki : Interaction {
 
     public override void OnInteraction(Interaction present)
     {
-        Destroy(gameObject);
+        GetComponent<Animator>().SetBool("Liikkuu", true);
     }
 
     public override string Description(Interaction present)
